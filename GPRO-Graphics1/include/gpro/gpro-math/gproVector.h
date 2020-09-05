@@ -91,6 +91,8 @@ floatv vec3add(float3 v_lh_sum, float3 const v_rh);	// add other to lh vector
 
 floatv vec3sum(float3 v_sum, float3 const v_lh, float3 const v_rh);	// get sum of lh and rh vector
 
+floatv vec3MultNum(float3 v_lh_sum, floatv const v_rh);
+
 
 #ifdef __cplusplus
 // DB: end C linkage for C++ symbols

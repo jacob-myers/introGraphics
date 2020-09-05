@@ -103,6 +103,16 @@ inline floatv vec3sum(float3 v_sum, float3 const v_lh, float3 const v_rh)
 	return vec3init(v_sum, (v_lh[0] + v_rh[0]), (v_lh[1] + v_rh[1]), (v_lh[2] + v_rh[2]));
 }
 
+inline floatv vec3MultNum(float3 vec_result, floatv const num)
+{
+	vec_result[0] *= *num;
+	vec_result[1] *= *num;
+	vec_result[2] *= *num;
+	return vec_result;
+}
+
+using point3 = vec3;   // 3D point
+using color = vec3;    // RGB color
 
 #endif	// !_GPRO_VECTOR_INL_
 #endif	// _GPRO_VECTOR_H_
